@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import  MyComponent from './MyComponent'
+import MyComponent from './MyComponent.js';
 
 class App extends Component {
-
   render() {
     return (
       <div>

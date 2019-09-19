@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "eslint-config-prettier": "^6.3.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "prettier"
+    ]
+  }
+}

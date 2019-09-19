@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 
 class MyComponent extends Component {
-
     state = {
         input: '',
-        array: ['taeyeon', 'chaeyeon']
+        array: ['taeyeon', 'chaewon'],
     };
 
-    handleChange = e =>{
+    handleChange = e => {
         this.setState({
-            input: e.target.value
+            input: e.target.value,
         });
     };
 
@@ -23,13 +22,11 @@ class MyComponent extends Component {
     render() {
         return (
             <div>
-                <input value={this.state.input} onChange={this.handleChange}/>
+                <input value={this.state.input} onChange={this.handleChange} />
                 <button onClick={this.handleInsert}>추가</button>
-                {
-                    this.state.array.map(
-                        (text, index)=>(<div key={index}>{text}</div>)
-                    )
-                }
+                {this.state.array.map((text, index) => (
+                    <div key={index}>{text}</div>
+                ))}
             </div>
         );
     }
