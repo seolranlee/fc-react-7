@@ -47,7 +47,7 @@ class App extends Component {
     // };
 
     // 좀 더 쉬운 방법
-    // filter를 토해서 뫄뫄가 아닌 조건의 애들만 불러옴 > 뫄뫄 삭제와 같은 효과
+    // filter를 통해서 뫄뫄가 아닌 조건의 애들만 불러옴 > 뫄뫄 삭제와 같은 효과
     handleRemove = id => {
         const { list } = this.state;
         this.setState({
