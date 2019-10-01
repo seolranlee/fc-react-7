@@ -4,30 +4,45 @@ import TodoList from './components/TodoList';
 
 import './App.css';
 
+const bulkTodos = (() => {
+    const array = [];
+    for (let i = 0; i < 1000; i++) {
+        array.push({
+            id: i,
+            text: `Todo #${i}`,
+            checked: false,
+        });
+    }
+    return array;
+})();
+
 class App extends Component {
-    id = 3;
+    id = 1000;
+    state = {
+        todos: bulkTodos,
+    };
 
     // state 의 초깃값을 설정합니다.
-    state = {
-        // 그 초깃값은 배열 형태로 넣어주었고, 내부에 기본 값들을 넣어주었습니다.
-        todos: [
-            {
-                id: 0,
-                text: '앵귤러 배우고',
-                checked: true,
-            },
-            {
-                id: 1,
-                text: '리액트 배우고',
-                checked: false,
-            },
-            {
-                id: 2,
-                text: '뷰 배우자',
-                checked: false,
-            },
-        ],
-    };
+    // state = {
+    //     // 그 초깃값은 배열 형태로 넣어주었고, 내부에 기본 값들을 넣어주었습니다.
+    //     todos: [
+    //         {
+    //             id: 0,
+    //             text: '앵귤러 배우고',
+    //             checked: true,
+    //         },
+    //         {
+    //             id: 1,
+    //             text: '리액트 배우고',
+    //             checked: false,
+    //         },
+    //         {
+    //             id: 2,
+    //             text: '뷰 배우자',
+    //             checked: false,
+    //         },
+    //     ],
+    // };
 
     handleCreate = text => {
         const todoDate = {

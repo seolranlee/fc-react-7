@@ -11,11 +11,12 @@ const TodoList = ({ todos, onCheck, onRemove }) => {
             key={todo.id}
             onCheck={onCheck}
             onRemove={onRemove}
+            todo={todo}
             // id={todo.id}
             // text={todo.text}
             // checked={todo.checked}
 
-            {...todo} // 스프레드 문법을 쓰면 객체에 있는 하나하나의 값이 컴포넌트의 프롭스로 전달이 된다.
+            // {...todo} // 스프레드 문법을 쓰면 객체에 있는 하나하나의 값이 컴포넌트의 프롭스로 전달이 된다.
         />
     ));
 };
