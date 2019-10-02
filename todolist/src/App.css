@@ -18,8 +18,10 @@
 }
 
 .App .white-box {
+    /* 기존 padding 값 변경 */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background: white;
-    padding: 2rem;
     min-height: 8rem;
     max-height: 25rem;
     overflow-y: auto;

@@ -6,7 +6,7 @@ import './App.css';
 
 const bulkTodos = (() => {
     const array = [];
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 5000; i++) {
         array.push({
             id: i,
             text: `Todo #${i}`,
@@ -17,7 +17,7 @@ const bulkTodos = (() => {
 })();
 
 class App extends Component {
-    id = 1000;
+    id = 5000;
     state = {
         todos: bulkTodos,
     };
