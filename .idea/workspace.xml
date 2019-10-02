@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="abf8169e-0086-42ea-a243-9efc5cbe654c" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="219" />
+    <option name="y" value="226" />
+    <option name="width" value="1717" />
+    <option name="height" value="1051" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="fc-react-7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fc-react-7" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/seolran/01.project" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="abf8169e-0086-42ea-a243-9efc5cbe654c" name="Default Changelist" comment="" />
+      <created>1568797840630</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568797840630</updated>
+      <workItem from="1568797841867" duration="880000" />
+      <workItem from="1568857079390" duration="487000" />
+      <workItem from="1568877043538" duration="690000" />
+      <workItem from="1568967622164" duration="3192000" />
+      <workItem from="1569202931795" duration="440000" />
+      <workItem from="1569490143855" duration="838000" />
+      <workItem from="1569899852495" duration="1211000" />
+      <workItem from="1569914860476" duration="1253000" />
+      <workItem from="1570001772098" duration="134000" />
+    </task>
+    <task id="LOCAL-00001" summary="[hello-react]&#10;- first init">
+      <created>1568800549784</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568800549784</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[debug-tutorial]&#10;- react debug 방법&#10;&#10;[react-with-samples]&#10;- input 관리 방법">
+      <created>1568877125927</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568877125927</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[debug-tutorial]&#10;- react debug 방법&#10;&#10;[react-with-samples]&#10;- app구현">
+      <created>1568967941439</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568967941439</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[todo-list]&#10;- todo-list 구현&#10;+ CreateForm&#10;+ TodoList&#10;+ TodoItem">
+      <created>1569490277643</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569490277643</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[todo-list]&#10;- todo-list 구현&#10;+ 컴포넌트 성능최적화">
+      <created>1569899875515</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569899875515</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[todo-list]&#10;- todo-list 구현&#10;+ 컴포넌트 성능최적화&#10;+ react-virtualized 활용: 초기 랜더링 최적화">
+      <created>1570001841029</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570001841029</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="9125000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="2576" height="1576" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13317573" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49960598" visible="true" weight="0.3294036" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49842396" weight="0.2924463" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500394" side_tool="true" visible="true" weight="0.3294036" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[hello-react]&#10;- first init" />
+    <MESSAGE value="[debug-tutorial]&#10;- react debug 방법&#10;&#10;[react-with-samples]&#10;- input 관리 방법" />
+    <MESSAGE value="[debug-tutorial]&#10;- react debug 방법&#10;&#10;[react-with-samples]&#10;- app구현" />
+    <MESSAGE value="[todo-list]&#10;- todo-list 구현&#10;+ CreateForm&#10;+ TodoList&#10;+ TodoItem" />
+    <MESSAGE value="[todo-list]&#10;- todo-list 구현&#10;+ 컴포넌트 성능최적화" />
+    <MESSAGE value="[todo-list]&#10;- todo-list 구현&#10;+ 컴포넌트 성능최적화&#10;+ react-virtualized 활용: 초기 랜더링 최적화" />
+    <option name="LAST_COMMIT_MESSAGE" value="[todo-list]&#10;- todo-list 구현&#10;+ 컴포넌트 성능최적화&#10;+ react-virtualized 활용: 초기 랜더링 최적화" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/hello-react/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todolist/components/CreateForm.css" />
+    <entry file="file://$PROJECT_DIR$/todolist/components/CreateForm.js" />
+    <entry file="file://$PROJECT_DIR$/hello-react/src/MyComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-with-samples/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
