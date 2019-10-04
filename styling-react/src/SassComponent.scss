@@ -6,7 +6,7 @@
         transition: all 0.3s ease-in;
         &.red {
             // .red 클래스가 .box 와 함께 사용 됐을 때
-            background: $red;
+            background: $oc-red-6;
             @include square(1);
         }
         &.orange {
