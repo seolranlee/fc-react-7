@@ -1,5 +1,5 @@
 {
-    "name": "styling-react",
+    "name": "css",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -60,12 +60,6 @@
         "webpack-manifest-plugin": "2.1.1",
         "workbox-webpack-plugin": "4.3.1"
     },
-    "parserOptions": {
-        "ecmaVersion": 2017
-    },
-    "env": {
-        "es6": true
-    },
     "scripts": {
         "start": "node scripts/start.js",
         "build": "node scripts/build.js",
@@ -73,7 +67,8 @@
     },
     "eslintConfig": {
         "extends": [
-            "prettier"
+            "prettier",
+            "react-app"
         ]
     },
     "browserslist": {
