@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 import NewsItem from './NewsItem';
-import Cateogries from './Cateogries';
 
 const NewsListBlock = styled.div`
     box-sizing: border-box;
@@ -21,15 +20,6 @@ class NewsList extends Component {
     state = {
         loading: false,
         articles: null,
-        categories: [
-            'business',
-            'entertainment',
-            'health',
-            'science',
-            'sports',
-            'technology',
-        ],
-        current: 'all',
     };
 
     handleClick = idx => {
@@ -70,8 +60,12 @@ class NewsList extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if (prevState.current !== this.state.current)
-            this.loadData(this.state.current);
+        const { category } = this.props.match.params;
+
+        if (prevProps.match.params.category !== category)
+            // this.loadData(this.state.current);
+            this.loadData(category);
+        // alert('category change');
     }
 
     render() {
@@ -80,14 +74,6 @@ class NewsList extends Component {
         }
         return (
             <NewsListBlock>
-                {this.state.categories.map((category, idx) => (
-                    <Cateogries
-                        category={category}
-                        key={idx}
-                        idx={idx}
-                        handleClick={this.handleClick}
-                    />
-                ))}
                 {this.state.articles.map(article => (
                     <NewsItem article={article} key={article.url} />
                 ))}
