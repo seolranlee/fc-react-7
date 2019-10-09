@@ -28,7 +28,8 @@ const CategoryBlock = styled.div`
                 text-decoration: none;
                 border-radius: 5rem;
                 background-color: rgba(83, 138, 228, 0.2);
-                &:hover {
+                &:hover,
+                &.active {
                     background-color: rgba(83, 138, 228, 0.6);
                     color: #fff;
                     transition: all 0.4s ease-out;
@@ -49,7 +50,12 @@ class App extends Component {
             'sports',
             'technology',
         ],
-        current: 'all',
+        currentIdx: -1,
+    };
+    handleClick = index => {
+        this.setState({
+            currentIdx: index,
+        });
     };
     render() {
         return (
@@ -58,7 +64,20 @@ class App extends Component {
                     <ul>
                         {this.state.categories.map((category, index) => (
                             <li key={index}>
-                                <Link to={category === 'all' ? '/' : category}>
+                                <Link
+                                    onClick={() => {
+                                        this.handleClick(index);
+                                    }}
+                                    className={
+                                        this.state.currentIdx ===
+                                        this.state.categories.findIndex(i => {
+                                            return i === category;
+                                        })
+                                            ? 'active'
+                                            : ''
+                                    }
+                                    to={category === 'all' ? '/' : category}
+                                >
                                     {category}
                                 </Link>
                             </li>
