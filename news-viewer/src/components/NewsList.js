@@ -36,11 +36,11 @@ class NewsList extends Component {
             if (url) {
                 console.log(url);
                 var response = await axios.get(
-                    `https://newsapi.org/v2/top-headlines?country=kr&category=${url}&apiKey=a2acaace6df64c40b5cd4bc851eda27e`,
+                    `/top-headlines?country=kr&category=${url}&apiKey=a2acaace6df64c40b5cd4bc851eda27e`,
                 );
             } else {
                 var response = await axios.get(
-                    'https://newsapi.org/v2/top-headlines?country=kr&apiKey=a2acaace6df64c40b5cd4bc851eda27e',
+                    '/top-headlines?country=kr&apiKey=a2acaace6df64c40b5cd4bc851eda27e',
                 );
             }
 
