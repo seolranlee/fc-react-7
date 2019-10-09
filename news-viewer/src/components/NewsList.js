@@ -56,7 +56,9 @@ class NewsList extends Component {
     };
 
     componentDidMount() {
-        this.loadData();
+        const { category } = this.props.match.params;
+
+        this.loadData(category);
     }
 
     componentDidUpdate(prevProps, prevState) {

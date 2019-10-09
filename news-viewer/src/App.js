@@ -41,6 +41,7 @@ const CategoryBlock = styled.div`
 class App extends Component {
     state = {
         categories: [
+            'all',
             'business',
             'entertainment',
             'health',
@@ -57,11 +58,14 @@ class App extends Component {
                     <ul>
                         {this.state.categories.map((category, index) => (
                             <li key={index}>
-                                <Link to={category}>{category}</Link>
+                                <Link to={category === 'all' ? '/' : category}>
+                                    {category}
+                                </Link>
                             </li>
                         ))}
                     </ul>
                 </CategoryBlock>
+                <Route path="/" exact component={NewsList} />
                 <Route path="/:category" component={NewsList} />
             </div>
         );
