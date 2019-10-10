@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 import NewsItem from './NewsItem';
+import Cateogries from './Cateogries';
 
 const NewsListBlock = styled.div`
     box-sizing: border-box;
@@ -20,6 +21,7 @@ class NewsList extends Component {
     state = {
         loading: false,
         articles: null,
+        current: 'all'
     };
 
     handleClick = idx => {
@@ -34,7 +36,6 @@ class NewsList extends Component {
                 loading: true,
             });
             if (url) {
-                console.log(url);
                 var response = await axios.get(
                     `/top-headlines?country=kr&category=${url}&apiKey=a2acaace6df64c40b5cd4bc851eda27e`,
                 );
@@ -57,29 +58,29 @@ class NewsList extends Component {
 
     componentDidMount() {
         const { category } = this.props.match.params;
-
         this.loadData(category);
     }
 
     componentDidUpdate(prevProps, prevState) {
         const { category } = this.props.match.params;
-
         if (prevProps.match.params.category !== category)
-            // this.loadData(this.state.current);
             this.loadData(category);
-        // alert('category change');
     }
 
     render() {
+        const { category } = this.props.match.params;
         if (this.state.loading || this.state.articles === null) {
             return <NewsListBlock>로딩중....</NewsListBlock>;
         }
         return (
-            <NewsListBlock>
-                {this.state.articles.map(article => (
-                    <NewsItem article={article} key={article.url} />
-                ))}
-            </NewsListBlock>
+            <div>
+                <Cateogries category={category}/>
+                <NewsListBlock>
+                    {this.state.articles.map(article => (
+                        <NewsItem article={article} key={article.url} />
+                    ))}
+                </NewsListBlock>
+            </div>
         );
     }
 }
