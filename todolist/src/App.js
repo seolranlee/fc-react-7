@@ -17,32 +17,34 @@ const bulkTodos = (() => {
 })();
 
 class App extends Component {
-    id = 5000;
-    state = {
-        todos: bulkTodos,
-    };
-
-    // state 의 초깃값을 설정합니다.
+    // id = 5000;
     // state = {
-    //     // 그 초깃값은 배열 형태로 넣어주었고, 내부에 기본 값들을 넣어주었습니다.
-    //     todos: [
-    //         {
-    //             id: 0,
-    //             text: '앵귤러 배우고',
-    //             checked: true,
-    //         },
-    //         {
-    //             id: 1,
-    //             text: '리액트 배우고',
-    //             checked: false,
-    //         },
-    //         {
-    //             id: 2,
-    //             text: '뷰 배우자',
-    //             checked: false,
-    //         },
-    //     ],
+    //     todos: bulkTodos,
     // };
+
+    // key로 사용될 id의 초기값
+    id = 3;
+    // state 의 초깃값을 설정합니다.
+    state = {
+        // 그 초깃값은 배열 형태로 넣어주었고, 내부에 기본 값들을 넣어주었습니다.
+        todos: [
+            {
+                id: 0,
+                text: 'Learn Angular.js',
+                checked: true,
+            },
+            {
+                id: 1,
+                text: 'Learn React.js',
+                checked: false,
+            },
+            {
+                id: 2,
+                text: 'Learn Vue.js',
+                checked: false,
+            },
+        ],
+    };
 
     handleCreate = text => {
         const todoDate = {
@@ -81,7 +83,7 @@ class App extends Component {
         return (
             <div className="App">
                 <div className="header">
-                    <h1>오늘 뭐할까?</h1>
+                    <h1>Todo List</h1>
                 </div>
                 <CreateForm onSubmit={this.handleCreate} />
                 <div className="white-box">

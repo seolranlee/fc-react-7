@@ -25,11 +25,11 @@ class CreateForm extends Component {
         return (
             <form className="CreateForm" onSubmit={this.handleSubmit}>
                 <input
-                    placeholder="오늘 뭐하지..?"
+                    placeholder="Add to the todo list"
                     value={input}
                     onChange={this.handleChange}
                 />
-                <button type="submit">추가</button>
+                <button type="submit">Add Item</button>
             </form>
         );
     }
