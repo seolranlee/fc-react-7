@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const CategoryBlock = styled.div`
@@ -39,8 +39,6 @@ const CategoryBlock = styled.div`
 `;
 
 class Cateogries extends Component {
-
-    
     state = {
         categories: [
             'all',
@@ -58,13 +56,16 @@ class Cateogries extends Component {
             currentIdx: index,
         });
     };
-    componentDidMount(){
-        const {category} = this.props;
-        console.log(category)
-        if(category===undefined) this.handleClick(0);
-        else this.handleClick(this.state.categories.findIndex(i => {
-            return i === category;
-        }));
+    componentDidMount() {
+        const { category } = this.props;
+        console.log(category);
+        if (category === undefined) this.handleClick(0);
+        else
+            this.handleClick(
+                this.state.categories.findIndex(i => {
+                    return i === category;
+                }),
+            );
     }
 
     render() {

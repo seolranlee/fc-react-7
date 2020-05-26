@@ -21,7 +21,7 @@ class NewsList extends Component {
     state = {
         loading: false,
         articles: null,
-        current: 'all'
+        current: 'all',
     };
 
     handleClick = idx => {
@@ -31,16 +31,17 @@ class NewsList extends Component {
     };
 
     loadData = async url => {
+        let response;
         try {
             this.setState({
                 loading: true,
             });
             if (url) {
-                var response = await axios.get(
+                response = await axios.get(
                     `/top-headlines?country=kr&category=${url}&apiKey=a2acaace6df64c40b5cd4bc851eda27e`,
                 );
             } else {
-                var response = await axios.get(
+                response = await axios.get(
                     '/top-headlines?country=kr&apiKey=a2acaace6df64c40b5cd4bc851eda27e',
                 );
             }
@@ -74,10 +75,10 @@ class NewsList extends Component {
         }
         return (
             <div>
-                <Cateogries category={category}/>
+                <Cateogries category={category} />
                 <NewsListBlock>
                     {this.state.articles.map(article => (
-                        <NewsItem article={article} key={article.url} />
+                        <NewsItem article={article} key={article.title} />
                     ))}
                 </NewsListBlock>
             </div>
